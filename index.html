@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 修改页面标题 -->
+    <title>Offline Music Player - MP3</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            overflow-x: hidden;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #1DB954, #191414);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem;
+            color: white;
+            text-align: center;
+        }
+
+        .hero-content {
+            max-width: 800px;
+        }
+
+        .hero h1 {
+            font-size: 4rem;
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+
+        .hero p {
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+        }
+
+        .contact-section {
+            background: #f8f8f8;
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+
+        .contact-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .contact-title {
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+            color: #333;
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 1.2rem;
+        }
+
+        .contact-icon {
+            font-size: 1.5rem;
+        }
+
+        .contact-email {
+            color: #1DB954;
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s ease;
+        }
+
+        .contact-email:hover {
+            color: #191414;
+        }
+
+        .app-store-btn {
+            display: inline-block;
+            background: black;
+            color: white;
+            padding: 1rem 2rem;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: transform 0.3s ease;
+        }
+
+        .app-store-btn:hover {
+            transform: scale(1.05);
+        }
+
+        .features {
+            padding: 5rem 2rem;
+            background: #fff;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .feature-card {
+            padding: 2rem;
+            border-radius: 15px;
+            background: #f8f8f8;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .feature-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        /* 可添加邮箱样式 */
+        .email-link {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .email-link:hover {
+            color: #1DB954;
+        }
+
+        footer {
+            background: #191414;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .footer-links {
+            display: flex;
+            gap: 2rem;
+        }
+
+        .footer-link {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer-link:hover {
+            color: #1DB954;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .hero p {
+                font-size: 1.2rem;
+            }
+
+            .contact-info {
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            .footer-content {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .footer-links {
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+<section class="hero">
+    <div class="hero-content animate__animated animate__fadeIn">
+        <!-- 修改标题 -->
+        <h1>Offline Music Player - MP3</h1>
+        <p>Explore an infinite world of music, let beautiful melodies accompany you</p>
+        <!-- 更新 App Store 跳转链接 -->
+        <a href="https://apps.apple.com/us/app/snaptube-offline-music-player/id6605935428" class="app-store-btn animate__animated animate__pulse animate__infinite">
+            Download on App Store
+        </a>
+    </div>
+</section>
+
+<section class="contact-section">
+    <div class="contact-container">
+        <h2 class="contact-title">Get in Touch</h2>
+        <div class="contact-info">
+            <div class="contact-item">
+                <span class="contact-icon">📧</span>
+                <a href="mailto:sales@anbition.net" class="contact-email">sales@anbition.net</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="features">
+    <div class="features-grid">
+        <div class="feature-card animate__animated animate__fadeInUp">
+            <div class="feature-icon">🎵</div>
+            <h3>Vast Music Library</h3>
+            <p>Millions of curated songs covering global music genres</p>
+        </div>
+        <div class="feature-card animate__animated animate__fadeInUp" style="animation-delay: 0.2s">
+            <div class="feature-icon">🎨</div>
+            <h3>Personalized Recommendations</h3>
+            <p>AI-powered algorithms crafting your unique music taste</p>
+        </div>
+        <div class="feature-card animate__animated animate__fadeInUp" style="animation-delay: 0.4s">
+            <div class="feature-icon">🎧</div>
+            <h3>Premium Sound Quality</h3>
+            <p>Lossless audio playback for studio-grade music experience</p>
+        </div>
+    </div>
+</section>
+
+<section class="features" style="background: #f8f8f8;">
+    <div class="features-grid">
+        <div class="feature-card animate__animated animate__fadeInUp">
+            <div class="feature-icon">📱</div>
+            <h3>Cross-device Sync</h3>
+            <p>Continue your music journey on any device</p>
+        </div>
+        <div class="feature-card animate__animated animate__fadeInUp" style="animation-delay: 0.2s">
+            <div class="feature-icon">🌙</div>
+            <h3>Offline Listening</h3>
+            <p>Download your favorite music to enjoy anywhere</p>
+        </div>
+        <div class="feature-card animate__animated animate__fadeInUp" style="animation-delay: 0.4s">
+            <div class="feature-icon">🎮</div>
+            <h3>Immersive Experience</h3>
+            <p>Thoughtfully designed interface for seamless interaction</p>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="footer-content">
+        <p>&copy; 2024 Offline Music Player - MP3. All rights reserved.</p>
+        <div class="footer-links">
+            <a href="#" class="footer-link">Privacy Policy</a>
+            <a href="#" class="footer-link">Terms of Service</a>
+            <a href="#" class="footer-link">Support</a>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
