@@ -2,379 +2,348 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="google-site-verification" content="B44SvJGB_k0PIodtN7tYqT-IrB6P7ozTRbJQ1-neI9k" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- 修改页面标题 -->
-    <title>MusicTube: Music&Video Offline</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <title>MusicTube - Royalty-Free Music Player</title>
     <style>
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
-
+        
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
             line-height: 1.6;
             color: #333;
-            overflow-x: hidden;
-        }
-
-        .header {
-            position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-            background: rgba(29, 185, 84, 0.95);
-            padding: 1rem 2rem;
-            z-index: 1000;
-            display: flex;
-            justify-content: flex-end;
-            align-items: center;
-        }
-
-        .contact-header {
-            color: white;
-            text-decoration: none;
-            font-weight: 600;
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-            transition: transform 0.3s ease;
-        }
-
-        .contact-header:hover {
-            transform: scale(1.05);
-        }
-
-        .hero {
-            background: linear-gradient(135deg, #1DB954, #191414);
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             min-height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 2rem;
-            color: white;
-            text-align: center;
-            margin-top: 0;
         }
-
-        .hero-content {
-            max-width: 800px;
-        }
-
-        .hero h1 {
-            font-size: 4rem;
-            margin-bottom: 1rem;
-            font-weight: 700;
-        }
-
-        .hero p {
-            font-size: 1.5rem;
-            margin-bottom: 2rem;
-            opacity: 0.9;
-        }
-
-        .hero-description {
-            font-size: 1.2rem;
-            margin-bottom: 2rem;
-            opacity: 0.9;
-            line-height: 1.8;
-        }
-
-        .contact-section {
-            background: #f8f8f8;
-            padding: 4rem 2rem;
-            text-align: center;
-        }
-
-        .contact-container {
-            max-width: 800px;
-            margin: 0 auto;
-        }
-
-        .contact-title {
-            font-size: 2.5rem;
-            margin-bottom: 1.5rem;
-            color: #333;
-        }
-
-        .contact-info {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 2rem;
-            margin-bottom: 2rem;
-        }
-
-        .contact-item {
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-            font-size: 1.2rem;
-        }
-
-        .contact-icon {
-            font-size: 1.5rem;
-        }
-
-        .contact-email {
-            color: #1DB954;
-            text-decoration: none;
-            font-weight: 600;
-            transition: color 0.3s ease;
-        }
-
-        .contact-email:hover {
-            color: #191414;
-        }
-
-        .app-store-btn {
-            display: inline-block;
-            background: black;
-            color: white;
-            padding: 1rem 2rem;
-            border-radius: 30px;
-            text-decoration: none;
-            font-weight: 600;
-            transition: transform 0.3s ease;
-        }
-
-        .app-store-btn:hover {
-            transform: scale(1.05);
-        }
-
-        .features {
-            padding: 5rem 2rem;
-            background: #fff;
-        }
-
-        .features-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
+        
+        .container {
             max-width: 1200px;
             margin: 0 auto;
+            padding: 20px;
         }
-
-        .feature-card {
-            padding: 2rem;
-            border-radius: 15px;
-            background: #f8f8f8;
+        
+        header {
             text-align: center;
+            padding: 40px 0;
+            color: white;
+        }
+        
+        .logo {
+            font-size: 3.5rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .tagline {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            margin-bottom: 30px;
+        }
+        
+        .main-content {
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            overflow: hidden;
+            margin-bottom: 30px;
+        }
+        
+        .hero-section {
+            padding: 50px 40px;
+            text-align: center;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+        }
+        
+        .hero-title {
+            font-size: 2.5rem;
+            color: #2c3e50;
+            margin-bottom: 20px;
+        }
+        
+        .hero-description {
+            font-size: 1.1rem;
+            color: #555;
+            max-width: 600px;
+            margin: 0 auto 30px;
+        }
+        
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            padding: 40px;
+        }
+        
+        .feature {
+            text-align: center;
+            padding: 20px;
+            border-radius: 10px;
+            background: #f8f9fa;
             transition: transform 0.3s ease;
         }
-
-        .feature-card:hover {
-            transform: translateY(-10px);
+        
+        .feature:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
         }
-
+        
         .feature-icon {
             font-size: 3rem;
-            margin-bottom: 1rem;
+            margin-bottom: 15px;
         }
-
-        /* 可添加邮箱样式 */
-        .email-link {
+        
+        .feature h3 {
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+        
+        .feature p {
+            color: #666;
+        }
+        
+        .policy-section {
+            background: #34495e;
             color: white;
-            text-decoration: none;
-            transition: color 0.3s ease;
-        }
-
-        .email-link:hover {
-            color: #1DB954;
-        }
-
-        footer {
-            background: #191414;
-            color: white;
-            text-align: center;
-            padding: 2rem;
-        }
-
-        .footer-content {
-            max-width: 1200px;
-            margin: 0 auto;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-wrap: wrap;
-            gap: 1rem;
-        }
-
-        .footer-links {
-            display: flex;
-            gap: 2rem;
-        }
-
-        .footer-link {
-            color: white;
-            text-decoration: none;
-            transition: color 0.3s ease;
-        }
-
-        .footer-link:hover {
-            color: #1DB954;
-        }
-
-        .support-section {
-            padding: 5rem 2rem;
-            background: #fff;
+            padding: 40px;
             text-align: center;
         }
-
-        .support-container {
+        
+        .policy-title {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+        
+        .policy-description {
+            margin-bottom: 30px;
+            opacity: 0.9;
+        }
+        
+        .policy-links {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
             max-width: 800px;
             margin: 0 auto;
         }
-
-        .support-title {
-            font-size: 2.5rem;
-            margin-bottom: 1.5rem;
-            color: #333;
-        }
-
-        .support-text {
-            font-size: 1.2rem;
-            color: #666;
-            margin-bottom: 2rem;
-            line-height: 1.8;
-        }
-
-        .support-email {
-            display: inline-block;
-            background: #1DB954;
+        
+        .policy-link {
+            background: #3498db;
             color: white;
-            padding: 1rem 2rem;
-            border-radius: 30px;
+            padding: 20px;
+            border-radius: 10px;
             text-decoration: none;
-            font-weight: 600;
-            transition: transform 0.3s ease;
+            transition: all 0.3s ease;
+            display: block;
         }
-
-        .support-email:hover {
-            transform: scale(1.05);
+        
+        .policy-link:hover {
+            background: #2980b9;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
         }
-
+        
+        .policy-link h4 {
+            font-size: 1.2rem;
+            margin-bottom: 8px;
+        }
+        
+        .policy-link p {
+            font-size: 0.9rem;
+            opacity: 0.9;
+        }
+        
+        .app-info {
+            background: #ecf0f1;
+            padding: 40px;
+            text-align: center;
+        }
+        
+        .app-info h3 {
+            color: #2c3e50;
+            margin-bottom: 20px;
+        }
+        
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .info-item {
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .info-label {
+            font-weight: bold;
+            color: #34495e;
+            display: block;
+            margin-bottom: 5px;
+        }
+        
+        .info-value {
+            color: #666;
+        }
+        
+        footer {
+            background: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 30px;
+            margin-top: 0;
+        }
+        
+        .footer-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .contact-info {
+            margin-bottom: 20px;
+        }
+        
+        .contact-email {
+            color: #3498db;
+            text-decoration: none;
+        }
+        
+        .contact-email:hover {
+            text-decoration: underline;
+        }
+        
         @media (max-width: 768px) {
-            .header {
-                padding: 1rem;
-            }
-
-            .contact-header {
-                font-size: 0.9rem;
-            }
-
-            .hero h1 {
+            .logo {
                 font-size: 2.5rem;
             }
-
-            .hero p {
-                font-size: 1.2rem;
+            
+            .hero-title {
+                font-size: 2rem;
             }
-
-            .contact-info {
-                flex-direction: column;
-                gap: 1rem;
+            
+            .features {
+                padding: 20px;
+                gap: 20px;
             }
-
-            .footer-content {
-                flex-direction: column;
-                text-align: center;
+            
+            .policy-section {
+                padding: 30px 20px;
             }
-
-            .footer-links {
-                justify-content: center;
+            
+            .app-info {
+                padding: 30px 20px;
             }
         }
     </style>
 </head>
 <body>
-<header class="header">
-    <a href="mailto:support@anbition.net" class="contact-header">
-        <span>📧</span>
-        Contact Support
-    </a>
-</header>
+    <div class="container">
+        <header>
+            <div class="logo">🎵 MusicTube</div>
+            <div class="tagline">Enjoy Royalty-Free Music Anywhere</div>
+        </header>
 
-<section class="hero">
-    <div class="hero-content animate__animated animate__fadeIn">
-        <h1>MusicTube: Music&Video Offline</h1>
-        <p>Explore an infinite world of music and videos, let beautiful content accompany you</p>
-        <p class="hero-description">MusicTube is your ultimate companion for enjoying music and videos offline. With our app, you can create personalized playlists, download your favorite content, and enjoy high-quality audio and video playback experience. The friendly interface and powerful functions make your entertainment journey a pleasant experience.</p>
-    </div>
-</section>
+        <div class="main-content">
+            <div class="hero-section">
+                <h1 class="hero-title">Simple. Clean. Privacy-Focused.</h1>
+                <p class="hero-description">
+                    MusicTube is a lightweight music player that gives you access to beautiful royalty-free music from Pixabay. 
+                    No registration required, no personal data collected.
+                </p>
+            </div>
 
-<section class="contact-section">
-    <div class="contact-container">
-        <h2 class="contact-title">Get in Touch</h2>
-        <div class="contact-info">
-            <div class="contact-item">
-                <span class="contact-icon">📧</span>
-                <a href="mailto:sales@anbition.net" class="contact-email">sales@anbition.net</a>
+            <div class="features">
+                <div class="feature">
+                    <div class="feature-icon">🎶</div>
+                    <h3>Royalty-Free Music</h3>
+                    <p>Access thousands of high-quality tracks from Pixabay's extensive library</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">🔒</div>
+                    <h3>Privacy First</h3>
+                    <p>No registration, no personal data collection. Your privacy is our priority</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">📱</div>
+                    <h3>Simple & Clean</h3>
+                    <p>Intuitive interface designed for easy music discovery and playback</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="main-content">
+            <div class="policy-section">
+                <h2 class="policy-title">Legal & Privacy Information</h2>
+                <p class="policy-description">
+                    Transparency is important to us. Review our policies to understand how we protect your privacy and the terms of using MusicTube.
+                </p>
+                <div class="policy-links">
+                    <a href="policy.html" class="policy-link">
+                        <h4>🛡️ Privacy Policy</h4>
+                        <p>Learn how we protect your privacy and what data we do (and don't) collect</p>
+                    </a>
+                    <a href="terms.html" class="policy-link">
+                        <h4>📋 Terms of Service</h4>
+                        <p>Understand the terms and conditions for using MusicTube</p>
+                    </a>
+                    <a href="data-deletion.html" class="policy-link">
+                        <h4>🗑️ Data Deletion</h4>
+                        <p>Request deletion of any data associated with your app usage</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="main-content">
+            <div class="app-info">
+                <h3>App Information</h3>
+                <div class="info-grid">
+                    <div class="info-item">
+                        <span class="info-label">App Name</span>
+                        <span class="info-value">MusicTube</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">Version</span>
+                        <span class="info-value">1.0</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">Developer</span>
+                        <span class="info-value">Marson</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">Music Source</span>
+                        <span class="info-value">Pixabay</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">Last Updated</span>
+                        <span class="info-value">September 10, 2025</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">Platform</span>
+                        <span class="info-value">Mobile</span>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-</section>
 
-<section class="features">
-    <div class="features-grid">
-        <div class="feature-card animate__animated animate__fadeInUp">
-            <div class="feature-icon">🎵</div>
-            <h3>Vast Content Library</h3>
-            <p>Millions of curated songs and videos covering global entertainment</p>
+    <footer>
+        <div class="footer-content">
+            <div class="contact-info">
+                <p><strong>Contact Us</strong></p>
+                <p>For support, questions, or feedback:</p>
+                <p><a href="mailto:musictubeapp.contact@gmail.com" class="contact-email">musictubeapp.contact@gmail.com</a></p>
+            </div>
+            <p>&copy; 2025 Marson. All rights reserved.</p>
+            <p>MusicTube - Simple, Clean, Privacy-Focused Music Player</p>
         </div>
-        <div class="feature-card animate__animated animate__fadeInUp" style="animation-delay: 0.2s">
-            <div class="feature-icon">🎨</div>
-            <h3>Personalized Recommendations</h3>
-            <p>AI-powered algorithms crafting your unique entertainment taste</p>
-        </div>
-        <div class="feature-card animate__animated animate__fadeInUp" style="animation-delay: 0.4s">
-            <div class="feature-icon">🎧</div>
-            <h3>Premium Quality</h3>
-            <p>High-quality audio and video playback for immersive experience</p>
-        </div>
-    </div>
-</section>
-
-<section class="features" style="background: #f8f8f8;">
-    <div class="features-grid">
-        <div class="feature-card animate__animated animate__fadeInUp">
-            <div class="feature-icon">📱</div>
-            <h3>Cross-device Sync</h3>
-            <p>Continue your entertainment journey on any device</p>
-        </div>
-        <div class="feature-card animate__animated animate__fadeInUp" style="animation-delay: 0.2s">
-            <div class="feature-icon">🌙</div>
-            <h3>Offline Access</h3>
-            <p>Download your favorite music and videos to enjoy anywhere</p>
-        </div>
-        <div class="feature-card animate__animated animate__fadeInUp" style="animation-delay: 0.4s">
-            <div class="feature-icon">🎮</div>
-            <h3>Immersive Experience</h3>
-            <p>Thoughtfully designed interface for seamless interaction</p>
-        </div>
-    </div>
-</section>
-
-<section class="support-section">
-    <div class="support-container">
-        <h2 class="support-title">Need Help?</h2>
-        <p class="support-text">We're here to help you with any questions or issues you might have. Our support team is ready to assist you with technical problems, account issues, or any other concerns.</p>
-        <a href="mailto:support@anbition.net" class="support-email">Contact Support</a>
-    </div>
-</section>
-
-<footer>
-    <div class="footer-content">
-        <p>&copy; 2024 MusicTube: Music&Video Offline. All rights reserved.</p>
-        <div class="footer-links">
-            <a href="#" class="footer-link">Privacy Policy</a>
-            <a href="#" class="footer-link">Terms of Service</a>
-            <a href="#" class="footer-link">Support</a>
-        </div>
-    </div>
-</footer>
+    </footer>
 </body>
 </html>
